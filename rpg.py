@@ -60,7 +60,7 @@ def announce(rounds, score, name):
     else:
         if score == ((rounds * 10 / 2)):
             print("Oh no! It's a tie. So lets have a tie breaker round!")
-            final_round_score, final_winner = play(1, name)
+            final_round_score, final_winner = play(3, name)
         else:
             final_winner = win_calc(rounds, score, name)
     return final_winner
